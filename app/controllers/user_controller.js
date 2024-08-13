@@ -124,6 +124,10 @@ exports.changePassword = async function (req, res) {
                     message: "Invalid Token!"
                 });
             }
+
+            if (req.body.email != decoded.email) {
+                return res.status(400).send({ message: "Please provide correct email" });
+            }
             if (!req.body.email || !req.body.password) {
                 return res.status(400).send({ message: "Please provide all details" });
             }
