@@ -120,12 +120,10 @@ exports.getPosts = async function (req, res) {
                 }
 
                 return {
-                    post: {
-                        ...post.toObject(),  // Convert the Mongoose document to a plain object
-                        isLiked: isLiked,  // Exclude the 'likedBy' field
-                        likedBy: undefined
-                    },
-                    postedBy: user
+                    ...post.toObject(),  // Convert the Mongoose document to a plain object
+                    isLiked: isLiked,  // Exclude the 'likedBy' field
+                    postedBy: user,
+                    likedBy: undefined
                 };
             }));
 
