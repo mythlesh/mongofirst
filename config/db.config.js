@@ -1,3 +1,3 @@
 module.exports = {
-    url: 'mongodb+srv://Cluster06654:Mythlesh1234@cluster06654.3bsry.mongodb.net/mongo_crud_git'
+    url: 'mongodb+srv://mythlesh:Mythlesh1234@cluster6367.laxuz.mongodb.net/mongo_crud_git'
 }
